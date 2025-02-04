@@ -1,21 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Define global color variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --nav-bg: #FFBF34;  /* Mango Yellow */
+  --nav-txt: #3F3B37; /* Dark Gray */
+  --nav-hover: #ffffff; /* Hover Effect */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Apply navbar styles */
+nav {
+  background-color: var(--nav-bg) !important;
+  color: var(--nav-txt) !important;
+}
+
+/* Adjust logo alignment */
+.logo-container {
+  display: flex;
+  align-items: flex-end; /* Align text to the bottom */
+  gap: 1px; /* Space between tree and text */
+}
+
+.logo-text {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.7rem; /* Adjust for desktop */
+  margin-bottom: -13px; /* Adjust text alignment */
+}
+
+.nav-text {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem; /* Base size for mobile */
+}
+
+@media (max-width: 1200px) {
+  .logo-text {
+    font-size: 2.1rem;
+    margin-bottom: -8px;
+  }
+
+  .nav-text {
+    margin-bottom: 10px;
+  }
+  .logo-container {
+      gap: 0px; /* Space between tree and text */
+  }
+  
 }
