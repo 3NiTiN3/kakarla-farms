@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center space-x-2 logo-container">
           <span className="font-bold logo-text">Kakarla</span>
           <Image src="/logo.png" alt="Kakarla Farma Logo" width={50} height={50} />
-          <span className="font-bold logo-text">Farma</span>
+          <span className="font-bold logo-text">Farms</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -5,8 +5,8 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Kakarla Farma",
-  description: "Fresh mangoes from Kakarla Farma, delivered to your doorstep!",
+  title: "Kakarla Farms",
+  description: "Fresh mangoes from Kakarla Farms, delivered to your doorstep!",
   icons: {
     icon: "/favicon.ico",
   },
