@@ -7,11 +7,13 @@
   
   .heroSection {
     position: relative;
+    z-index: -1;
   }
   
   .heroImage {
     width: 100%;
     border-radius: 10px;
+    z-index: -1;
   }
   
   .title {

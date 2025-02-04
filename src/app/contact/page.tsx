@@ -2,6 +2,7 @@
 
 import styles from "./Contact.module.css";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -24,6 +25,7 @@ export default function ContactPage() {
     <div className={styles.contactContainer}>
       {/* Hero Section */}
       <div className={styles.heroSection}>
+      <Image src="/contact-hero.jpg" alt="Farm Image" width={1200} height={400} className={styles.heroImage} />
         <h1 className={styles.title}>Contact Us</h1>
       </div>
 

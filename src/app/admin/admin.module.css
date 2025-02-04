@@ -1,0 +1,53 @@
+.adminContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .adminTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .addButton {
+    background-color: var(--nav-bg);
+    color: var(--nav-txt);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .mangoTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .mangoTable th, .mangoTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .deleteButton {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form input, .form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
