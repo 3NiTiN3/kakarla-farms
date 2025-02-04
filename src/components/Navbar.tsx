@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { cart } = useCart();
@@ -49,9 +50,10 @@ export default function Navbar() {
             <Link href="/cart" className="relative flex items-center">
               <ShoppingCart size={24} />
               {cart.length > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 rounded-full">
-                  {cart.length}
-                </span>
+              <span className="absolute -top-2 -right-2 bg-white text-red-500 text-xs px-2 rounded-full border border-red-500 font-bold">
+              {cart.length}
+            </span>
+            
               )}
             </Link>
           </div>
